@@ -1,0 +1,21 @@
+{
+    "version": "0f2040c383aef668ece1d897a36431653f0a3385",
+    "description": "copyparty up2k uploader / filesearch tool",
+    "homepage": "https://github.com/9001/copyparty",
+    "license": "MIT,ISC",
+    "url": "https://github.com/9001/copyparty/raw/0f2040c383aef668ece1d897a36431653f0a3385/bin/u2c.py",
+    "hash": "2495487a03623b0e97ff7db20af99fdd3f119277a0caa9c31345e537bf61c213",
+    "bin": [
+        [
+            "u2c.py",
+            "u2c"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/9001/copyparty/commits?path=bin/u2c.py",
+        "jsonpath": "$[0].sha"
+    },
+    "autoupdate": {
+        "url": "https://github.com/9001/copyparty/raw/$version/bin/u2c.py"
+    }
+}
