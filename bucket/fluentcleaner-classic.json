@@ -1,17 +1,17 @@
 {
-    "version": "1.17.227",
+    "version": "26.09.01",
     "description": "A real WinUI desktop cleaner with terminal control and multi-database support",
     "homepage": "https://github.com/builtbybel/FluentCleaner",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/builtbybel/FluentCleaner/releases/download/classic-1.17.227/FluentCleaner-Classic-net48.zip",
-            "hash": "90788364c2e5db8078762828616909f6be776205a387c2a9a54744a54d619a12"
+            "url": "https://github.com/builtbybel/FluentCleaner/releases/download/26.09.01/FluentCleaner-Classic-net48.zip",
+            "hash": "42703e673cff81eb9d2ec7f8eacaaf93fa009915ffca40e54b63ba789d80fe85"
         }
     },
     "notes": [
         "Optional: download Custom.zip and extract to $persist_dir for additional tools:",
-        "https://github.com/builtbybel/FluentCleaner/releases/download/1.17.227/Custom.zip"
+        "https://github.com/builtbybel/FluentCleaner/releases/download/26.09.01/Custom.zip"
     ],
     "extract_dir": "FluentCleaner-Classic-net48",
     "bin": "FluentCleaner.Classic.exe",
@@ -23,13 +23,13 @@
     ],
     "persist": "Custom",
     "checkver": {
-        "url": "https://github.com/builtbybel/FluentCleaner/releases",
-        "regex": "/releases/tag/classic-([\\d.]+)"
+        "github": "https://github.com/builtbybel/FluentCleaner",
+        "regex": "/releases/tag/((?:classic-)?[\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/builtbybel/FluentCleaner/releases/download/classic-$version/FluentCleaner-Classic-net48.zip"
+                "url": "https://github.com/builtbybel/FluentCleaner/releases/download/$version/FluentCleaner-Classic-net48.zip"
             }
         },
         "notes": [
