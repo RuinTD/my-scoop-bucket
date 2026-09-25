@@ -23,8 +23,8 @@
     ],
     "persist": "Custom",
     "checkver": {
-        "url": "https://github.com/builtbybel/FluentCleaner/releases",
-        "regex": "/releases/tag/([\\d.]+)"
+        "url": "https://github.com/builtbybel/FluentCleaner/releases/latest",
+        "regex": "/releases/tag/((?:classic-)?[\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
